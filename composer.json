@@ -16,7 +16,7 @@
         "illuminate/view": "^8.0",
         "vimeo/psalm": "^4.8.1",
         "orchestra/testbench": "^3.8 || ^4.0 || ^5.0 || ^6.0",
-        "barryvdh/laravel-ide-helper": "^2.10"
+        "barryvdh/laravel-ide-helper": "master"
     },
     "license": "MIT",
     "authors": [
@@ -54,6 +54,12 @@
         "lint-fix": "phpcbf -n",
         "test": "codecept run --skip-group skip"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/barryvdh/laravel-ide-helper"
+        }
+    ],
     "require-dev": {
         "codeception/codeception": "^4.1.6",
         "codeception/module-phpbrowser": "^1.0.0",
